@@ -1,0 +1,18 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+$blue:   #2196F3; 
+$purple: #563d7c;
+
+$brand-primary:      $purple;
+$btn-primary-bg:     $brand-primary;
+$btn-primary-border: $btn-primary-bg;
+
+$fancy-font: 'Pacifico', cursive;;
+
+$enable-rounded: false;
+
+$hr-border-color: rgba($white,.2);
+
+$modal-lg:                    1100px ;

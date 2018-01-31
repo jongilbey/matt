@@ -1,0 +1,309 @@
+@import "bootstrap";
+
+@include media-breakpoint-down(xs) {
+    .container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+body {
+    
+    height: 100%;
+    margin: 0;
+}
+h2 {
+    font-weight: 200;
+    font-size: 2.5rem;
+}
+a.logo {
+    font-family: $fancy-font;
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-top: 0;
+    color: $brand-primary;
+    &:hover {
+        text-decoration: none;
+    }
+}
+.fancy-font {
+    font-family: $fancy-font;
+    color: $brand-primary;
+    font-size: 1.7rem;
+}
+.bd-booticon {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #fff;
+    background-color: #563d7c;
+    border-radius: 15%;
+}
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    display:none;
+}
+.justify-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.emphasis {
+    font-style: italic;
+    color: $brand-primary;
+}
+.social {
+    margin: 0 auto;
+    padding: 0;
+    li {
+        display: inline-block;
+        a {
+            display: block;
+            width: 2.2rem;
+            height: 2.2rem;
+            margin: .4rem .1rem;
+            text-align: center;
+            text-decoration: none;
+            color: #696b6e;
+            border: 0.1rem solid #dfe1e5;
+            border-radius: 499rem;
+            line-height: 1.5;
+            font-size: 1.4rem;
+            &:hover {
+                color: $brand-primary;
+            }
+        }
+    }
+}
+.navbar-inverse .navbar-nav .nav-link {
+    color: #fff;
+}
+.navbar-custom {
+    background: transparent;
+    .navbar-brand {
+        font-family: $fancy-font;
+        font-size: 1.9rem;
+        color: $brand-primary;
+    }
+   .nav-link {
+         &:hover {
+            color: $brand-primary !important;
+        }
+    }
+}
+p {
+    color: #696b6e;
+    font-size: .9rem;
+}
+.btn-outline-primary {
+    border-width: 0.15rem;
+}
+.divider {
+    display: block;
+    width: 6rem;
+    height: 0.3rem;
+    background-color: $brand-primary;
+    margin: 2rem auto;
+}
+/** Main Cover Styles **/
+.cover {
+    background: #2b2d34  ;
+    background-size: cover;
+    
+    height: auto;
+    border-radius: 0;
+    width: 100%;
+    color: #fff;
+    padding-top: 1rem;
+    .cover-inner {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .cover-container {
+        display: table;
+        height: 100%;
+        height: 100vh;
+        margin: 0 auto;
+    }
+    h1 {
+        font-weight: 200;
+    }
+    p.lead {
+        margin: 2rem auto;
+        color: rgba(255, 255, 255, 0.75);
+    }
+}
+/** Main Cover Styles End **/
+
+/** Feature Styles **/
+.features {
+    background: #f7f7f8;
+    padding: 5rem 0;
+    h2 {
+        margin-top: 2rem;
+    }
+    p.lead {
+        color: #a0a0a0;
+    }
+    .col-feature {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        .rounded-circle {
+            margin: 0 auto;
+            margin-bottom: 4rem;
+            width: 8rem;
+            height: 8rem;
+            background: none;
+            
+        }
+        
+    }
+}
+/** Feature Styles End **/
+/** Work Styles **/
+.gallery {
+    background: #f7f7f8;
+    padding: 5rem 0;
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .cell {
+        margin: .5rem;
+        width: calc(33.33% - 1rem);
+        img {
+            display: block;   
+        }
+    }
+}
+/** Testimonial Styles **/
+.testimonial {
+    padding: 4rem 0;
+    .quote-icon {
+        color: #a0a0a0;
+    }
+    .quote-text {
+        font-size: 1.6rem;
+        font-weight: 300;
+        font-style: italic;
+        color: #a0a0a0;
+    }
+    .quote-author {
+        font-style: italic;
+        font-family: "Droid Serif", Times, Georgia, serif;
+        color: #46484a;
+    }
+}
+/** Testimonial Styles End **/
+
+/** Team Styles **/
+.team {
+        padding: 5rem 0 5rem 0;
+        background: #f7f7f8;
+        
+        .box {
+            background: #fff;
+            box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .col-team img {
+            margin-top: .5rem;
+            margin-bottom: 2rem;
+            width: 60%;
+        }
+}
+/** Team Styles End **/
+
+/** Contact Styles **/
+.contact {
+    background: #fff;
+    padding: 0 0 5rem 0;
+    .contact-details {
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+    }
+    
+    .constrain-width {
+        max-width: 45rem;
+        margin: 0 auto;
+    }
+
+    .form-control-custom {
+        border: 0.1rem solid #dfe1e5;
+        width: 100%;
+        padding: 1rem;
+        font-size: 0.9rem;
+        color: #696b6e;
+    }
+}
+/** Contact Styles End **/
+
+/** Footer Styles **/
+.footer {
+    background: #f7f7f8;
+    width: 100%;
+    color: #46484a;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    .container-fluid {
+        padding: 0;
+    }
+    .divider {
+        display: block;
+        width: 100%;
+        height: .1rem;
+        background-color: #dfe1e5;
+        margin: .5rem 0 1.5rem 0;
+    }
+    .nav-footer {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        li {
+            float: left;
+            margin-top: .5rem;
+        }
+    }
+    .nav-link {
+        color: #2b2d34;
+        &:hover {
+            color: $brand-primary;
+        }
+    }
+    .social {
+        margin: 0 auto;
+        padding: 0;
+        li {
+            display: inline-block;
+            a {
+                display: block;
+                width: 2.2rem;
+                height: 2.2rem;
+                margin: .4rem .1rem;
+                text-align: center;
+                text-decoration: none;
+                background: #fff;
+                color: #696b6e;
+                border: 0.1rem solid #dfe1e5;
+                border-radius: 499rem;
+                line-height: 1.5;
+                font-size: 1.4rem;
+                background: none;
+                border: none;
+                &:hover {
+                    color: $brand-primary;
+                }
+            }
+        }
+    }
+}
+/** Footer Styles End **/
